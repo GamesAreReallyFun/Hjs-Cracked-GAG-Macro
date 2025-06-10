@@ -1,0 +1,140 @@
+Searching seedItems for Pepper Seed
+found Pepper Seed at index 18
+Searching seedItems for Cacao Seed
+found Cacao Seed at index 19
+Searching seedItems for Beanstalk Seed
+found Beanstalk Seed at index 20
+Searching seedItems for Ember Lily
+found Ember Lily at index 21
+Searching seedItems for 
+index: 18
+previusIndex: 1
+currentarray: seedItems
+sendCount: 17
+Searching seedItems for Pepper Seed
+found Pepper Seed at index 18
+index: 19
+previusIndex: 18
+currentarray: seedItems
+sendCount: 1
+Searching seedItems for Cacao Seed
+found Cacao Seed at index 19
+index: 20
+previusIndex: 19
+currentarray: seedItems
+sendCount: 1
+Searching seedItems for Beanstalk Seed
+found Beanstalk Seed at index 20
+index: 21
+previusIndex: 20
+currentarray: seedItems
+sendCount: 1
+Searching seedItems for Pepper Seed
+found Pepper Seed at index 18
+Searching seedItems for Cacao Seed
+found Cacao Seed at index 19
+Searching seedItems for Beanstalk Seed
+found Beanstalk Seed at index 20
+Searching seedItems for Ember Lily
+found Ember Lily at index 21
+Searching seedItems for 
+index: 18
+previusIndex: 1
+currentarray: seedItems
+sendCount: 17
+Searching seedItems for Pepper Seed
+found Pepper Seed at index 18
+index: 19
+previusIndex: 18
+currentarray: seedItems
+sendCount: 1
+Searching seedItems for Cacao Seed
+found Cacao Seed at index 19
+index: 20
+previusIndex: 19
+currentarray: seedItems
+sendCount: 1
+Searching seedItems for Beanstalk Seed
+found Beanstalk Seed at index 20
+index: 21
+previusIndex: 20
+currentarray: seedItems
+sendCount: 1
+Searching seedItems for Pepper Seed
+found Pepper Seed at index 18
+Searching seedItems for Cacao Seed
+found Cacao Seed at index 19
+Searching seedItems for Beanstalk Seed
+found Beanstalk Seed at index 20
+Searching seedItems for Ember Lily
+found Ember Lily at index 21
+Searching seedItems for 
+index: 18
+previusIndex: 1
+currentarray: seedItems
+sendCount: 17
+Searching seedItems for Pepper Seed
+found Pepper Seed at index 18
+index: 19
+previusIndex: 18
+currentarray: seedItems
+sendCount: 1
+Searching seedItems for Cacao Seed
+found Cacao Seed at index 19
+index: 20
+previusIndex: 19
+currentarray: seedItems
+sendCount: 1
+Searching seedItems for Beanstalk Seed
+found Beanstalk Seed at index 20
+index: 21
+previusIndex: 20
+currentarray: seedItems
+sendCount: 1
+Searching gearItems for Basic Sprinkler
+found Basic Sprinkler at index 4
+Searching gearItems for Advanced Sprinkler
+found Advanced Sprinkler at index 5
+Searching gearItems for Godly Sprinkler
+found Godly Sprinkler at index 6
+Searching gearItems for Lightning Rod
+found Lightning Rod at index 7
+Searching gearItems for Master Sprinkler
+found Master Sprinkler at index 8
+Searching gearItems for Friendship Pot
+found Friendship Pot at index 11
+Searching gearItems for 
+index: 4
+previusIndex: 1
+currentarray: gearItems
+sendCount: 3
+Searching gearItems for Basic Sprinkler
+found Basic Sprinkler at index 4
+index: 5
+previusIndex: 4
+currentarray: gearItems
+sendCount: 1
+Searching gearItems for Advanced Sprinkler
+found Advanced Sprinkler at index 5
+index: 6
+previusIndex: 5
+currentarray: gearItems
+sendCount: 1
+Searching gearItems for Godly Sprinkler
+found Godly Sprinkler at index 6
+index: 7
+previusIndex: 6
+currentarray: gearItems
+sendCount: 1
+Searching gearItems for Lightning Rod
+found Lightning Rod at index 7
+index: 8
+previusIndex: 7
+currentarray: gearItems
+sendCount: 1
+Searching gearItems for Master Sprinkler
+found Master Sprinkler at index 8
+index: 11
+previusIndex: 8
+currentarray: gearItems
+sendCount: 3
