@@ -4,4 +4,4 @@ Just download, extract the file and run it like normal.
 
 Ill update the file whenever the macro updates.
 
-DM @itzhj on discord if something isnt working
+DM [@itzhj](https://discord.com/users/914795916366610432) on discord if something isnt working
