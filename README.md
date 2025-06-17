@@ -13,7 +13,7 @@ If the macro starts but something isn’t working right—like it’s not clicki
 
 #### 🛡️ Is this a virus?
 
-Nope. You can check the code yourself—it's the same as [Virage’s](https://github.com/VirageRoblox/Virage-Grow-A-Garden-Macro), just with `VerifyOwnership()` bypassed.
+Nope. You can check the code yourself.
 
 ## Support
 
