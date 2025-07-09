@@ -1,7 +1,4 @@
-; Hj's Cracked GAG Macro
-
-MsgBox, 0, Hj's Cracked GAG Macro, Enjoy not having to pay for a macro! :D
-
+; Cracked by @itzHj
 
 #SingleInstance, Force
 #NoEnv
@@ -60,6 +57,12 @@ global VERIFIED_KEY  := "VerifiedUser"
 global actionQueue := []
 
 settingsFile := A_ScriptDir "\settings.ini"
+
+IniRead, hasShownWelcome, %settingsFile%, State, WelcomeMsgShown, 0
+if (!hasShownWelcome) {
+    MsgBox, 0, Hj's Cracked GAG Macro, Enjoy not having to pay for the macro :).
+    IniWrite, 1, %settingsFile%, State, WelcomeMsgShown
+}
 
 ; unused
 
@@ -824,11 +827,11 @@ quickDetect(color1, color2, variation := 10, x1Ratio := 0.0, y1Ratio := 0.0, x2R
 
 ; item arrays
 
-seedItems := ["Carrot Seed", "Strawberry Seed", "Blueberry Seed", "Tomato Seed"
-             , "Cauliflower Seed", "Watermelon Seed", "Rafflesia Seed"
-             , "Green Apple Seed", "Avocado Seed", "Banana Seed", "Pineapple Seed"
-             , "Kiwi Seed", "Bell Pepper Seed", "Prickly Pear Seed", "Loquat Seed"
-             , "Feijoa Seed", "Pitcher Plant", "Sugar Apple"]
+seedItems := ["Carrot Seed", "Strawberry Seed", "Blueberry Seed", "Orange Tulip", "Tomato Seed"
+             , "Daffodil Seed", "Watermelon Seed", "Pumpkin Seed", "Apple Seed", "Bamboo Seed"
+             , "Coconut Seed", "Cactus Seed", "Dragon Fruit Seed", "Mango Seed", "Grape Seed"
+             , "Mushroom Seed", "Pepper Seed", "Cacao Seed", "Beanstalk Seed", "Ember Lily"
+             , "Sugar Apple", "Burning Bud"]
 
 gearItems := ["Watering Can", "Trowel", "Recall Wrench", "Basic Sprinkler", "Advanced Sprinkler"
              , "Godly Sprinkler", "Magnifying Glass", "Tanning Mirror", "Master Sprinkler", "Cleaning Spray", "Favorite Tool", "Harvest Tool", "Friendship Pot"]
@@ -883,6 +886,7 @@ fff(username) {
 
 
 IniWrite, 1, %settingsFile%, Main, %VERIFIED_KEY%
+IniWrite, TestUser, %settingsFile%, Main, VerifiedUsername
 
 Gosub, ShowGui
 
@@ -894,7 +898,7 @@ ShowGui:
     Gui, Margin, 10, 10
     Gui, Color, 0x202020
     Gui, Font, s9 cWhite, Segoe UI
-    Gui, Add, Tab, x10 y10 w580 h440 vMyTab, Seeds|Gears|Eggs|Honey|Crafting|Cosmetics|Settings|Credits
+    Gui, Add, Tab, x10 y10 w580 h440 vMyTab, Seeds|Gears|Eggs|Cosmetics|Settings|Credits
 
     Gui, Tab, 1
     Gui, Font, s9 c90EE90 Bold, Segoe UI
@@ -954,6 +958,7 @@ ShowGui:
         Gui, Add, Checkbox, % "x50 y" y " vEggItem" A_Index " gHandleSelectAll cD3D3D3 " . (eVal ? "Checked" : ""), % eggItems[A_Index]
     }
 
+    /*
     Gui, Tab, 4
     Gui, Font, s9 ce8ac07 Bold, Segoe UI
     Gui, Add, GroupBox, x23 y50 w475 h340 ce8ac07, Honey
@@ -968,7 +973,7 @@ ShowGui:
 
     Gui, Add, GroupBox, x23 y50 w230 h380 cBF40BF, Crafting Seeds
     Gui, Add, Text, x40 y130 w200 h40, Coming soon
-    /*
+
     IniRead, SelectAllCraft, %settingsFile%, Craft, SelectAllCraft, 0
     Gui, Add, Checkbox, % "x40 y90 vSelectAllCraft gHandleSelectAll cBF40BF " . (SelectAllCraft ? "Checked" : ""), Select All Seeds
     Loop, % craftItems.Length() {
@@ -976,10 +981,10 @@ ShowGui:
         y := 125 + (A_Index - 1) * 25
         Gui, Add, Checkbox, % "x40 y" y " vCraftItem" A_Index " gHandleSelectAll cD3D3D3 " . (cVal ? "Checked" : ""), % craftItems[A_Index]
     }
-    */
+
 
     Gui, Add, GroupBox, x270 y50 w230 h380 cBF40BF, Crafting Tools
-    /*
+
     IniRead, SelectAllCraft2, %settingsFile%, Craft2, SelectAllCraft2, 0
     Gui, Add, Checkbox, % "x280 y90 vSelectAllCraft2 gHandleSelectAll cBF40BF " . (SelectAllCraft2 ? "Checked" : ""), Select All Tools
     Loop, % craftItems2.Length() {
@@ -989,13 +994,13 @@ ShowGui:
     }
     */
 
-    Gui, Tab, 6
+    Gui, Tab, 4
     Gui, Font, s9 cD41551 Bold, Segoe UI
     Gui, Add, GroupBox, x23 y50 w475 h340 cD41551, Cosmetic Shop
     IniRead, BuyAllCosmetics, %settingsFile%, Cosmetic, BuyAllCosmetics, 0
     Gui, Add, Checkbox, % "x50 y90 vBuyAllCosmetics cD41551 " . (BuyAllCosmetics ? "Checked" : ""), Buy All Cosmetics
 
-    Gui, Tab, 7
+    Gui, Tab, 5
     Gui, Font, s9 cWhite Bold, Segoe UI
 
     ; opt1 := (selectedResolution = 1 ? "Checked" : "")
@@ -1085,7 +1090,7 @@ Gui, Add, Edit, x180 y165 w40 h18 Limit1 vSavedKeybind gUpdateKeybind, %SavedKey
     Gui, Add, Button, x50 y335 w150 h40 gStartScanMultiInstance Background202020, Start Macro (F5)
     Gui, Add, Button, x320 y335 w150 h40 gQuit Background202020, Stop Macro (F7)
 
-    Gui, Tab, 8
+    Gui, Tab, 6
     Gui, Font, s9 cWhite Bold, Segoe UI
     Gui, Add, GroupBox, x23 y50 w475 h340 cD3D3D3, Credits
 
